@@ -1,0 +1,75 @@
+// animation opacité image page d'accueil
+
+$('body').css("background-image","opacity:0")
+    
+    $("#img01").delay(500 ).animate({
+        opacity: 1
+    }, 3000);
+
+    $("#img02").delay( 1000 ).animate({   
+        opacity: 1
+    }, 3000);
+
+    $("#img03").delay( 1500).animate({
+        opacity: 1   
+    }, 3000);
+
+    $("#img04").delay( 2000 ).animate({
+        opacity: 1 
+    }, 3000);
+
+    $("#img06").delay( 2500).animate({
+        opacity: 1
+    }, 3000);
+
+    $("#img07").delay( 3000 ).animate({
+        opacity: 1 
+    }, 3000);
+
+    $("#img08").delay( 3500 ).animate({
+        opacity: 1
+    }, 3000);
+
+// animation du nom qui descend page d'accueil
+
+    
+  $('#intro').css('top','-10000px');
+   $('#intro').animate(
+  {'top':'120px'}, 5000);
+ $("#Nav").delay(4600).slideDown("1000"); 
+
+
+    
+// animation slidedow des chapitres page d'accueil
+
+   
+    $('#Dep').css("height", "1000")       
+
+    $('#intro1').css("display","none").delay(4600).fadeIn("slow").queue(function (next) { 
+   
+    $('#intro1').css('display', "block" ); 
+    next(); 
+  });
+
+    $('#intro2').css("display","none").delay(4700).fadeIn("slow").queue(function (next) { 
+        
+    $('#intro2').css('display', "block" ); 
+    next(); 
+  });
+    
+    $('#intro3').css("display","none").delay(4800).fadeIn("slow").queue(function (next) { 
+        
+    $('#intro3').css('display', "block" ); 
+    next(); 
+  });
+
+    $('#intro4').css("display","none").delay(4900).fadeIn("slow").queue(function (next) { 
+    $('#Nav').css('display', "block")  
+    $('#Dep').css("height", "auto")   
+    $('#intro4').css('display', "block" ); 
+    
+    next(); 
+  });
+
+
+  
